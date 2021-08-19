@@ -24,11 +24,11 @@ $(call inherit-product, device/realme/RMX2001/device.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RMX2001/RMX2001-vendor.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX2001
+PRODUCT_NAME := aosp_RMX2001
 PRODUCT_DEVICE := RMX2001
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme G90T Series
